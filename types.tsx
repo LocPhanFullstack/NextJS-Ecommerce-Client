@@ -1,23 +1,7 @@
-export interface Product {
-    id: string;
-    category: Category;
-    name: string;
-    price: string;
-    isFeatured: boolean;
-    size: Size;
-    color: Color;
-    images: Image[];
-}
-
-export interface Image {
-    id: string;
-    url: string;
-}
-
 export interface Billboard {
     id: string;
     label: string;
-    imageUrl: string;
+    imageURL: string;
 }
 
 export interface Category {
@@ -26,13 +10,29 @@ export interface Category {
     billboard: Billboard;
 }
 
-export interface Size {
+export interface Product {
+    id: string;
+    category: Category;
+    name: string;
+    price: string;
+    isFeatured: boolean;
+    size: Size;
+    color: Color;
+    images: Images[];
+}
+
+export interface Images {
+    id: string;
+    url: string;
+}
+
+export interface Color {
     id: string;
     name: string;
     value: string;
 }
 
-export interface Color {
+export interface Size {
     id: string;
     name: string;
     value: string;

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
-import MainNav from '@/components/main-nav';
-import Container from '@/components/ui/container';
+import MainNav from '@/components/MainNav';
+import Container from '@/components/ui/Container';
 import getCategories from '@/actions/get-categories';
 
 const Navbar = async () => {
