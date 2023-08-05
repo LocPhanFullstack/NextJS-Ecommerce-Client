@@ -1,10 +1,10 @@
 import { Urbanist } from 'next/font/google';
 
 import './globals.css';
-import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ModalProvider from '@/providers/ModalProvider';
 import ToastProvider from '@/providers/ToastProvider';
+import Navbar from '@/components/Navbar';
 
 const font = Urbanist({ subsets: ['latin'] });
 
