@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
 import MainNav from '@/components/MainNav';
-import Container from '@/components/ui/container';
 import getCategories from '@/actions/get-categories';
 import NavbarActions from './NavbarActions';
+import Container from './ui/container';
 
 const Navbar = async () => {
     const categories = await getCategories();
